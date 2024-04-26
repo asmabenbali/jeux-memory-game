@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Memoery Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(./assets/1597818861_285840.jpeg);
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
+            opacity: 3;
+        }
+        
+        .main {
+            width: 100%; /* Make sure it's full width */
+            max-width: 484px; /* Limiting maximum width */
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 5px;
+            padding: 13px;
+            margin-top: 28px;
+        }
+        div {
+            border-radius: 5px;
+            height: 80px;
+            background-color:rgb(252, 253, 254);
+            float: left;
+            margin: 2%;
+            cursor: pointer;
+            transition: background-color .1s ease-in-out;
+            width: 90px;
+        }
+        #startButton
+         {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 19px;
+            margin-top: 180px;
+        }
+
+        #finishButton {
+            margin-top: 100px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 19px;
+        }
+
+       
+        img {
+            height: 95px;
+            width: 90px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 100px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            div {
+                height: 60px;
+                width: 60px;
+            }
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main"></section>
+    <center>
+        <button id="startButton">Start</button>
+        <button id="finishButton" style="display: none;margin-right: 35px;">Finish</button>
+        <audio id="backgroundAudio" src="assets/life-of-a-wandering-wizard-15549.mp3" loop></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
